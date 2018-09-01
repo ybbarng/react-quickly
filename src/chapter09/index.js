@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Menu from './Menu';
 
 class Chapter09 extends Component {
   render() {
@@ -7,6 +8,7 @@ class Chapter09 extends Component {
         <header className="App-header">
           <h1 className="App-title">React Quickly - Chapter 09. Menu Component</h1>
         </header>
+        <Menu />
       </div>
     );
   }
