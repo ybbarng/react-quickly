@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import alarm from './flute_c_long_01.wav';
 import Button from './Button';
 import Timer from './Timer';
+import TimerSound from './TimerSound';
 
 class TimerWrapper extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class TimerWrapper extends Component {
           <Button time="15" startTimer={this.startTimer} />
         </div>
         <Timer timeLeft={this.state.timeLeft} audio={alarmId} />
-        <audio id={alarmId} src={alarm} prelaod="auto" />
+        <TimerSound play={this.state.timeLeft === 0} />
       </div>
     );
   }
