@@ -12,9 +12,9 @@ ReactDOM.render(
   <BrowserRouter>
     <div className="route-wrapper">
       <Route exact path="/" component={App} />
-      <Route exact path="/chapter09" component={Chapter09} />
-      <Route exact path="/chapter10" component={Chapter10} />
-      <Route exact path="/chapter11" component={Chapter11} />
+      <Route path="/chapter09" component={Chapter09} />
+      <Route path="/chapter10" component={Chapter10} />
+      <Route path="/chapter11" component={Chapter11} />
     </div>
   </BrowserRouter>, document.getElementById('root'));
 registerServiceWorker();
